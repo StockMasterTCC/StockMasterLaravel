@@ -29,7 +29,7 @@ body {
 }
 
 article {
-    width: 90%;
+    width: auto;
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
