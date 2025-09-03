@@ -11,7 +11,7 @@
 </head>
 
 {{-- Criando estilo no site com os seletores do CSS (vale mencionar que este metódo de 
-    colocar style dentro de um arquivo html ou laravel(PHP) está errado --}}
+    colocar style dentro de um arquivo html ou laravel(PHP) está errado) --}}
 <style>
 * {
     margin: 0;
