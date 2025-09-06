@@ -23,8 +23,7 @@
                     <input type="password" name="senha" required>
                 </p>
             </div>
-            <a href="{{ url('cadastrarMercadoria')}}">Entrar</a>
-            <input type="submit" value="ENTRAR">
+            <a href="{{ url('cadastrarMercadoria')}}">ENTRAR</a>
         </form>
     </article>
 </body>

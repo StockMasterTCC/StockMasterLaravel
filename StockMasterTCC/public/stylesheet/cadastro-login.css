@@ -36,7 +36,9 @@ article {
     margin-top: -70px
 }
 
-.cadastro, .login, a {
+.cadastro,
+.login,
+a {
     background-color: #000000;
     color: white;
     border: none;
@@ -93,7 +95,9 @@ article {
     margin-top: -70px
 }
 
-.cadastro, .login, a {
+.cadastro,
+.login,
+a {
     background-color: #000000;
     color: white;
     border: none;
@@ -119,11 +123,11 @@ form {
     width: 100% auto;
 }
 
+/* os inputs estavam fora da proporção do form... 
 .formulario-login {
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
 }
 
 input[type="email"],
@@ -131,13 +135,33 @@ input[type="password"],
 input[type="text"] {
     width: calc(100% - 20px);
     padding: 5px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px;
     font-size: 16px;
     border: 1px solid #3b3b3b;
     border-radius: 10px;
 }
+*/
 
-input[type="submit"] {
+.formulario-login {
+    color: black;
+    margin-bottom: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin: 10px 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+/* A virgula colocada antes do segundo seletor faz com que ambos os seletores recebam o mesmo estilo */
+input[type="submit"],
+a {
     background-color: #000000;
     color: white;
     border: none;

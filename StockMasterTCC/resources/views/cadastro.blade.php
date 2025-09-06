@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>StockMaster - Cadastro</title>
     <link rel="stylesheet" href="{{ url('stylesheet/cadastro-login.css') }}">
     <link rel="icon" href="{{ asset('img/stockmasterIcon.png') }}">
 </head>
@@ -11,6 +11,7 @@
     <article>
         <div class="logo">
             <img src="{{ asset('img/stockmasterLogo.png') }}" alt="Logo da StockMaster">
+            <form method="POST">
                 <div class="formulario-login">
                     <p><label for="nome">Nome: </label>
                         <input type="text" name="nome" required>
@@ -31,7 +32,7 @@
                         <input type="password" name="senha" required>
                     </p>
                 </div>
-                <input type="submit" value="ENTRAR">
+                <a href="{{ url('/') }}">ENTRAR</a>
             </form>
         </div>
     </article>
