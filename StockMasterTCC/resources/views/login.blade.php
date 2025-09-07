@@ -6,6 +6,7 @@
     <title>Login - StockMaster</title>
     <link rel="icon" href="{{ asset('img/stockmasterIcon.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url('stylesheet/cadastro-login.css') }}">
+    <link rel="stylesheet" href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css') }}">
 </head>
 <body>
     <article>
@@ -14,12 +15,13 @@
         </div>
         <form method="POST" action="Stockmaster.php">
             <div class="formulario-login">
-                <p><label for="email">Email: </label>
+                {{-- Ícones de framework front-end adicionados em login --}}
+                <p><i class="bi bi-envelope-fill"></i> <label for="email">Email: </label>
                     <input type="email" name="email" required>
                 </p>
             </div>
             <div class="formulario-login">
-                <p><label for="senha">Senha: </label>
+                <p><i class="bi bi-lock-fill"></i> <label for="senha">Senha: </label>
                     <input type="password" name="senha" required>
                 </p>
             </div>

@@ -95,19 +95,22 @@ article {
     margin-top: -70px
 }
 
+button,
 .cadastro,
 .login,
 a {
     background-color: #000000;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 15px;
     cursor: pointer;
     margin: 15px 0;
     font-size: 25px;
     width: 50%;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 
 img {

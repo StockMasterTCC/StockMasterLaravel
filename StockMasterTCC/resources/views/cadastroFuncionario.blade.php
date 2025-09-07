@@ -7,142 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>StockMaster - Cadastro de funcionários</title>
     <link rel="icon" href="{{ asset('img/stockmasterIcon.png') }}">
+    <link rel="stylesheet" href="{{ url('stylesheet/stockmaster.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css') }}">
 </head>
-
-{{-- Criando estilo no site com os seletores do CSS (vale mencionar que este metódo de 
-    colocar style dentro de um arquivo html ou laravel(PHP) está errado) --}}
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(240, 240, 240);
-    color: #000000;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(44, 44, 44, 0.05);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 100px;
-}
-
-.logo h1 {
-    color: rgb(0, 0, 100);
-    font-size: 3rem;
-    margin: 0;
-}
-
-#pesquisar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px 40px 0 0;
-    color: #000000;
-}
-
-#pesquisar input[type="text"] {
-    padding: 6px 10px;
-    border-radius: 30px;
-    border: 1px solid #000000;
-    background-color: #ffffff;
-    color: #2e2e2e;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #0e93ff;
-    overflow: auto;
-    margin: 20px auto;
-    padding: 0 !important;
-}
-
-.navbar a {
-    float: left;
-    padding: 5px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 20px;
-    width: 25%;
-    text-align: center;
-    transition: background 0.2s;
-}
-
-.navbar a:hover {
-    background-color: #59e2d2;
-    color: #000000;
-}
-
-/* Cadastrar mercadoria */
-.container {
-    padding: 0;
-    margin: 0;
-    box-sizing: content-box;
-}
-
-article {
-    background-color: #f9f9f9;
-    text-align: center;
-    margin: 2rem 10rem;
-    padding: 1.25rem 10rem 5rem 10rem;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.campo-mercadoria input[type="text"] {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    line-height: 1.5;
-}
-
-.campo-mercadoria input[type="date"] {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: white;
-    line-height: 1.5;
-}
-
-input[type="submit"] {
-    background-color: #0e93ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 100%;
-    cursor: pointer;
-}
-    </style>
     {{-- O corpo da pagina, a partir daqui criaremos Header(cabeçalho), main(o conteúdo principal e 
         possivelmente Footer(rodapé)--}}
 <body>
@@ -162,10 +30,10 @@ input[type="submit"] {
         </form>
     </div>
     <nav class="navbar">
-        <a href="{{ url('cadastrarMercadoria') }}">Cadastrar mercadoria</a>
-        <a href="{{ url('listaDeFuncionario') }}">Lista de funcionários</a>
-        <a href="{{ url('gestaoEntradaSaida') }}">Gestão de entrada/saída de itens</a>
-        <a href="{{ url('cadastroFuncionario') }}">Cadastro de funcionário</a>
+        <a href="{{ url('cadastrarMercadoria') }}"><i class="bi bi-box"></i> Cadastrar mercadoria</a>
+        <a href="{{ url('listaDeFuncionario') }}"><i class="bi bi-person-fill"></i> Lista de funcionários</a>
+        <a href="{{ url('gestaoEntradaSaida') }}"><i class="bi bi-arrow-down-up"></i> Gestão de entrada/saída de itens</a>
+        <a href="{{ url('cadastroFuncionario') }}"><i class="bi bi-person-plus-fill"></i> Cadastro de funcionário</a>
     </nav>
 </body>
 </html>

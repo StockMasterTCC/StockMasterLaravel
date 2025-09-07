@@ -33,3 +33,4 @@ Route::get("gestaoEntradaSaida", function () {
 Route::get("cadastroFuncionario", function () {
     return view('cadastroFuncionario');
 });
+
