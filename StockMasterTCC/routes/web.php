@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // Irá pegar e retornar uma função do arquivo da pasta view
 
+// Rotas de Login/Cadastro
 Route::get('/', function () { // rota raiz
     return view('stockmasterLogin'); // retorna a view stockmasterLogin (arquivo), assim como as rotas abaixo
 });
@@ -16,6 +17,8 @@ Route::get('login', function () {
     return view('login');
 });
 
+
+// Rotas de Administrador
 Route::get('cadastrarMercadoria', function () {
     return view('cadastrarMercadoria');
 });
@@ -34,3 +37,19 @@ Route::get("cadastroFuncionario", function () {
     return view('cadastroFuncionario');
 });
 
+// Rotas Fornecedor
+Route::get("areaAdministrativo", function () {
+    return view('areaAdministrativo');
+});
+
+Route::get("areaDeItens", function () {
+    return view('areaDeItens');
+});
+
+Route::get("areaPedidosEmail", function () {
+    return view('areaPedidosEmail');
+});
+
+Route::get("perfilFornecedor", function () {
+    return view('perfilFornecedor');
+});

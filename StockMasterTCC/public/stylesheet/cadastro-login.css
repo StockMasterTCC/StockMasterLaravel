@@ -49,6 +49,8 @@ a {
     font-size: 25px;
     width: 50%;
     text-decoration: none;
+    font-weight: bold;
+    text-align: center;
 }
 
 img {
@@ -57,6 +59,7 @@ img {
     margin-bottom: -30px;
 }
 
+/*
 * {
     margin: 0;
     padding: 0;
