@@ -34,7 +34,8 @@
                         <input type="password" name="senha" required>
                     </p>
                 </div>
-                <a href="{{ url('/') }}">ENTRAR</a>
+                {{-- adicionando botão de submit para envio de dados em Cadastro --}}
+                <input type="submit" value="CADASTRAR">
             </form>
         </div>
     </article>

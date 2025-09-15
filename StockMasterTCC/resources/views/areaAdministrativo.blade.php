@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css') }}">
 </head>
     {{-- O corpo da pagina, a partir daqui criaremos Header(cabeçalho), main(o conteúdo principal e 
-        possivelmente Footer(rodapé)--}}
+        possivelmente Footer(rodapé))--}}
 <body>
     <header>
         <div class="logo">

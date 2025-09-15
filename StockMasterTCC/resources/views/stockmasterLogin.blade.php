@@ -8,12 +8,16 @@
     <link rel="icon" href="{{ asset('img/stockmasterIcon.png') }}">
     <link rel="stylesheet" href="{{ url('stylesheet/cadastro-login.css') }}">
 </head>
+
 <body>
     <article>
         <div class="logo">
             <img src="{{ asset('img/stockmasterLogo.png') }}" alt="Logo da StockMaster">
-            <button class="cadastro"><a href="{{ url('cadastro') }}">CADASTRO</a></button>
-            <button class="login"><a href="{{ url('login') }}">LOGIN</a></button>
+        </div>
+        {{-- a tag a só é utilizado para inserir links de navegação e não para envio de um formulário --}}
+        {{-- a tag form colocado antes estava incorretamente utilizada --}}
+        <input type="button" onclick="location.href='{{ url('cadastro') }}'" value="CADASTRO">
+        <input type="button" onclick="location.href='{{ url('login') }}'" value="LOGIN">
         </div>
     </article>
 </body>

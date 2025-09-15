@@ -13,7 +13,7 @@
         <div class="logo">
             <img src="{{ asset('img/stockmasterLogo.png') }}" alt="Logo da StockMaster">
         </div>
-        <form method="POST" action="Stockmaster.php">
+        <form method="POST">
             <div class="formulario-login">
                 {{-- Ícones de framework front-end adicionados em login --}}
                 <p><i class="bi bi-envelope-fill"></i> <label for="email">Email: </label>
@@ -25,7 +25,8 @@
                     <input type="password" name="senha" required>
                 </p>
             </div>
-            <a href="{{ url('cadastrarMercadoria')}}">ENTRAR</a>
+            {{-- adicionando botão de submit para envio de dados em Login --}}
+            <input type="submit" value="ENTRAR">
         </form>
     </article>
 </body>

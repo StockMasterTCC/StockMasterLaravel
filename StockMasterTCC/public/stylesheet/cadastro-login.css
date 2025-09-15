@@ -36,20 +36,17 @@ article {
     margin-top: -70px
 }
 
-.cadastro,
-.login,
-a {
+input[type="button"] {
     background-color: #000000;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     cursor: pointer;
     margin: 15px 0;
-    font-size: 25px;
+    font-size: 20px;
     width: 50%;
     text-decoration: none;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -121,12 +118,13 @@ img {
     border-radius: 50px;
     margin-bottom: -30px;
 }
+*/
 
-/* login.php e cadastro.php*/
 form {
     display: flex;
     flex-direction: column;
-    width: 100% auto;
+    width: 85%;
+    text-decoration: none;
 }
 
 /* os inputs estavam fora da proporção do form... 
@@ -134,17 +132,6 @@ form {
     color: black;
     margin-bottom: 16px;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 5px;
-    margin: 10px 10px;
-    font-size: 16px;
-    border: 1px solid #3b3b3b;
-    border-radius: 10px;
 }
 */
 
@@ -178,4 +165,5 @@ a {
     width: 50%;
     margin: 10px auto;
     text-align: center;
+    text-decoration: none;
 }
