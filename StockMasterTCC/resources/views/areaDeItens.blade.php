@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css') }}">
 </head>
-    {{-- O corpo da pagina, a partir daqui criaremos Header(cabeçalho), main(o conteúdo principal e 
+    {{-- O corpo da pagina, a partir daqui criaremos Header(cabeçalho), main(o conteúdo principal) e 
         possivelmente Footer(rodapé)--}}
 <body>
     <header>
